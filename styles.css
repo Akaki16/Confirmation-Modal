@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    background: whitesmoke;
+}
+
+.container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#open-modal {
+    padding: 10px;
+    width: 150px;
+    font-size: 19px;
+    border: 2px solid rgb(223, 221, 221);
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#open-modal:hover {
+    background: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal .modal-box {
+    transform: translateY(50px);
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.modal .modal-box .modal-header {
+    text-align: center;
+    background: rgb(226, 223, 223);
+    padding: 15px;
+}
+
+.modal .modal-box .modal-header h3 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.modal .modal-box .modal-body {
+    text-align: center;
+}
+
+.modal .modal-box .modal-body p {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.modal .modal-box .modal-footer {
+    margin-top: 45px;
+    padding: 20px;
+    text-align: center;
+    background: gray;
+}
+
+.modal .modal-box .modal-footer button {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.modal .modal-box .modal-footer .delete-btn {
+    background: rgb(161, 95, 71);
+    color: #fff;
+}
+
+.modal .modal-box .modal-footer .cancel-btn {
+    background: gray;
+}
+
+@media (max-width: 636px) {
+    .modal .modal-box {
+        width: 100%;
+    }
+
+    .modal .modal-box .modal-header h3 {
+        font-size: 17px;
+    }
+
+    .modal .modal-box .modal-body p {
+        font-size: 17px;
+    }
+}
